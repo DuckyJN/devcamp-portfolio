@@ -5,3 +5,31 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+10.times do|blog|
+  Blog.create!(
+    title: "My Blog Post #{blog}",
+    body: "Hello, it's me I was wondering if after all these years you'd like to meet To go over everything They say that time's supposed to heal ya But I ain't done much healing Hello, can you hear me I'm in California dreaming about who we used to be When we were younger and free I've forgotten how it felt before the world fell at our feet There's such a difference between us And a million miles Hello from the other side I must have called a thousand times To tell you I'm sorry for everything that I've done But when I call you never seem to be home"
+  )
+end
+
+5.times do |skill|
+  Skill.create!(
+    title: "Rails #{skill}",
+    percent_utilized: 10
+  )
+end
+
+puts "5 skills created"
+
+9.times do |portfolio_item|
+  Portfolio.create!(
+    title: "Portfolio title: #{portfolio_item}",
+    subtitle: "My skillsets",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    main_image: "http://placehold.it/600x400",
+    thumb_image: "http://placehold.it/350x200"
+  )
+end
+
+puts "9 portfolio items created"
